@@ -1,0 +1,19 @@
+The maximum value / most efficient value to check upto is the square root(inclusive), if you go above that, then 
+you are just re-checking the same number.
+The square root of 64 = 8.
+Once you reach the square root(8), any number after that is divisible by 64 has already been checked.
+4*16 = 64. 16*4 = 64.
+
+for ( long factor = 2; factor*factor < num; factor++ )
+{
+	while ( num%factor == 0 )
+		num /= factor;
+}
+
+Over here, lets see we just said factor < num. 
+If we did this, then we would be rechecking over again because you
+would already know whether or not factor is a factor if it is above the square root of num. 
+Lets say num = 100. 
+50 < 100, but 50*50 is not, so let's say we are using this theory. We would already know that 50 is a factor
+since 100 / 2 = 50. It is pointless to recheck, even if none of the numbers below the square root are divisible
+by the factor.

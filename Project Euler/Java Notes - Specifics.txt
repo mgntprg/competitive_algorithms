@@ -1,0 +1,44 @@
+try-catch blocks require brackets for one statements, unlike iterative statements
+
+Simplified code to read / print whole text file.
+while(readFile.hasNextLine() )
+	System.out.println(readFile.nextLine()) ;
+
+.contains(String s) works for strings, not for chars, and checks to see if the object is being called on has s.
+
+Can't be dereferenced error comes from calling methods on a primitive data type.
+
+|| and && must be on the same line if both the chars are being used at once.
+
+Will give a may not be initialized if the initialization is in a for loop or if statement.
+
+Printing a boolean will print true or false
+
+If there are two methods, with the varying signature factor being the parameter, where they both are related (such as
+a parent-child object), then when it is called with the child data type, it will work and call the signature of the 
+child. However, if it is passed in with the parent data type, there will be a compilation error.
+
+If you have a parent class declaration initialized with a child:
+Polymorphic calls (on methods) will only work if the parent class has the same method, and it is overridden
+in the child. If the child does not have the method or the method is static in the parent class, then the parent's
+method is called.
+
+Non-static cannot be referenced from static context does not apply to parameters which are passed in to static methods.
+
+Overflow - range out of the values for that type
+
+Interfaces cannot implement other interfaces, only extend.
+
+Reserved words: enum, protected, static, case, finally, throw(s), package, native, volatile, transient, synchronized,
+assert
+
+Can create an interface object, but not abstract class one.
+
+Case statements in switch are like Python control statements.
+
+The second optional parameter for FileWriter, when passed as true, allows appending. PrintWriter can put a FileWriter
+for its parameter in order to append.
+
+Overriding is making a new method with the parents' exactly like the parents such that it can be polymorphically 
+called. Overloading is giving the same name in the same class, but putting in different parameters. Overwriting is 
+unrelated, and it is changing info, typically in a text file. 
